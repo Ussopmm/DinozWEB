@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="copy.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+  <script src="JS/multislider.min.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- HEADER section start -->
+  <header class="header">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="brand-name">
+          <a href="">History.</a>
+        </div>
+        <div class="nav-toggle">
+          <span></span>
+        </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#dinosaurs">Dinosaurs</a></li>
+            <li><a href="#information">Information</a></li>
+            <li><a href="#contact">Contacts</a></li>
+            <li><a href="#cart" onclick="showCart()"><i class="fas fa-shopping-cart"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+  <div id="cartOverlay" class="cart-overlay">
+    <div class="cart-content">
+      <h2>Shopping Cart</h2>
+      <ul id="cartItems">
+        <!-- Cart items will be dynamically added here -->
+      </ul>
+      <button class="checkout-btn" id="checkoutButton" onclick="processPayment()">Checkout</button>
+      <button class="close-btn" onclick="hideCartOverlay()">Close</button>
+    </div>
+  </div>
+
+
+
+  <!-- HEADER section end -->
+  <!-- Home section start -->
+  <section class="home-section" id="home">
+    <!-- shape -->
+    <div class="shape-01"></div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="home-content">
+          <h1>History of Mesozoic ERA</h1>
+          <h4>by Eldos team</h4>
+        </div>
+      </div>
+    </div>
+    <!-- scrolling down -->
+    <a href="#about" class="scroll-down">
+      <img src="images/arrow.png" alt="">
+    </a>
+  </section>
+  <!-- HOme section end -->
+
+
+  <!-- About section start -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-img">
+             <div class="img-box">
+              <img src="images/zavry.jpg" alt="about me">
+             </div>
+          </div>
+          <div class="about-content">
+            <div class="row">
+             <div class="section-title">
+              <h1>About us</h1>
+             </div>
+            </div>
+             <p>Welcome to an exciting journey into the history of the Mesozoic Era! 
+              We are your guide to the world of ancient times, where you can immerse yourself in amazing events and meet the unique inhabitants of this era.
+              Reveal the secrets and mysteries of the past on our website, which provides information about the Mesozoic Era 
+              and the amazing creatures that once inhabited our planet.</p>
+
+              <div class="stats">
+                <div class="row">
+                  <div class="stats-box">
+                    <h2>1000</h2>
+                    <h5>Types of Dinosaurs</h5>
+                  </div>
+                  <div class="stats-box">
+                    <h2>Mesozoic Era</h2>
+                    <h5>From 255 to 66 million years ago</h5>
+                  </div>
+                  <div class="stats-box">
+                    <h2>3 periods</h2>
+                    <h5>Triassic-Jurassic-Cretaceous</h5>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="#" class="btn btn-01">Contact us</a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- About section end -->
+  <!-- service section start -->
+  <section class="service-section" id="dinosaurs">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h1>Dinosaurs</h1>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Service item start -->
+        <div class="service-item">
+          <div class="service-item-inner">
+            <img src="images/Tyrannosaurus-rex-Dinosaur.jpeg" alt="service">
+            <div class="overlay">
+              <h4>Tyrannosaurus rex</h4>
+            </div>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-item-inner">
+            <img src="images/imgonline-com-ua-Resize-OBgtogHNhXmON.jpg" alt="service">
+            <div class="overlay">
+              <h4>Velociraptor</h4>
+            </div>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-item-inner">
+            <img src="images/imgonline-com-ua-Resize-P9DSthlQL8ZkyVi.jpg" alt="service">
+            <div class="overlay">
+              <h4>Stegosaurus</h4>
+            </div>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-item-inner">
+            <img src="images/imgonline-com-ua-Resize-YZivAsQFHBF.jpg" alt="service">
+            <div class="overlay">
+              <h4>Triceratops</h4>
+            </div>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-item-inner">
+            <img src="images/imgonline-com-ua-Resize-vdGnl0TcfgnR7f.jpg" alt="service">
+            <div class="overlay">
+              <h4>Brachiosaurus</h4>
+            </div>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-item-inner">
+            <img src="images/imgonline-com-ua-Resize-A6VCZRLRTvJwH.jpg" alt="service">
+            <div class="overlay">
+              <h4>Diplodocus</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Service item end -->
+      </div>
+    </div>
+  </section>
+  <!-- service section end -->
+
+  <!-- Work section start -->
+  <section class="work-section">
+ 
+    </div>
+  </section>
+  <!-- Work section end -->
+
+  <!-- Post section start -->
+  <div class="container">
+    <div class="row">
+      <div class="row">
+        <div class="section-title">
+          <h1>Information</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- POST FILTER -->
+  <div class="post-filter container">
+    <span class="filter-item active-filter" data-filter='carnivores'>Сarnivores</span>
+    <span class="filter-item" data-filter='herbivorous'>Herbivorous</span>
+  </div>
+ <!-- POST -->
+<section class="post container" id="information">    
+  <!-- Post Box 1 -->
+  <div class="post-box">
+    <img src="images/tyrraus.jpg" alt="post-t-rex">
+    <h2 class="category">Predatory view of ancient reptiles</h2>
+    <a href="dinoz/Tyrannosaurus rex/index.html" class="post-title">
+      Tyrannosaurus REX
+    </a>
+    <h6 class="price">
+      $<span class="priceValue">99.99</span>
+    </h6>
+    <button class="add-to-cart-btn btn-small addtoCart" data-product-id="1"><i class="fas fa-cart-plus"></i>Add to Cart</button>
+    <p class="post-description">The Tyrannosaurus rex, commonly known as T-rex, was one of the largest carnivorous dinosaurs that ever lived. Here's a short information about T-rex:
+      Size: T-rex was a massive dinosaur, measuring up to 40 feet (12 meters) in length, about 15-20 feet (4.6-6 meters) in height, and weighing around 7-9 tons.</p>
+  </div>
+  <!-- Post Box 2 -->
+  <div class="post-box">
+    <img src="images/Velociraptor-hero-b5723f1.jpg" alt="post-velociraptor">
+    <h2 class="category">Predatory view of ancient reptiles</h2>
+    <a href="dinoz/Velociraptor/index.html" class="post-title">
+      Velociraptor
+    </a>
+    <h6 class="price">
+      $<span class="priceValue">140</span>
+    </h6>
+    <button class="add-to-cart-btn btn-small addtoCart" data-product-id="2"><i class="fas fa-cart-plus"></i>Add to Cart</button>
+    <p class="post-description">Velociraptor is a genus of small to medium-sized theropod dinosaurs that lived during the Late Cretaceous period, approximately 75-71 million years ago. Here's a short information about Velociraptor:
+      Size: Velociraptor was relatively small compared to some other dinosaurs, measuring about 6 feet (2 meters) in length and standing about 3 feet (1 meter) tall at the hip. It weighed around 15-20 kilograms (33-44 pounds).</p>
+  </div>
+  <!-- Post Box 3 -->
+  <div class="post-box">
+    <img src="images/spino.jpg" alt="post-spinosaurus">
+    <h2 class="category">Predatory view of ancient reptiles</h2>
+    <a href="dinoz/Spinosaurus/index.html" class="post-title">
+      Spinosaurus
+    </a>
+    <h6 class="price">
+      $<span class="priceValue">119.99</span>
+    </h6>
+    <button class="add-to-cart-btn btn-small addtoCart" data-product-id="3"><i class="fas fa-cart-plus"></i>Add to Cart</button>
+    <p class="post-description">Spinosaurus is a genus of large theropod dinosaur that lived during the Cretaceous period, approximately 112 to 93.5 million years ago. It is known for its distinct feature of a sail-like structure on its back, composed of long spines connected by skin.</p>
+  </div>
+  <!-- Post Box 4 -->
+  <div class="post-box">
+    <img src="images/allo.jpg" alt="post-allosaurus">
+    <h2 class="category">Predatory view of ancient reptiles</h2>
+    <a href="dinoz/Allosaurus/index.html" class="post-title">
+      Allosaurus
+    </a>
+    <h6 class="price">
+      $<span class="priceValue">250</span>
+    </h6>
+    <button class="add-to-cart-btn btn-small addtoCart" data-product-id="4"><i class="fas fa-cart-plus"></i>Add to Cart</button>
+    <p class="post-description">Allosaurus is a genus of large theropod dinosaur that lived during the Late Jurassic period, approximately 155 to 145 million years ago. It was one of the most common predatory dinosaurs of its time and is often referred to as the "lion of the Jurassic."</p>
+  </div>
+  <!-- Post Box 5 -->
+  <div class="post-box">
+    <img src="images/Carnotaurus.jpg" alt="post-carnotaurus">
+    <h2 class="category">Predatory view of ancient reptiles</h2>
+    <a href="dinoz/Carnotaurus/index.html" class="post-title">
+      Carnotaurus
+    </a>
+    <h6 class="price">
+      $<span class="priceValue">180</span>
+    </h6>
+    <button class="add-to-cart-btn btn-small addtoCart" data-product-id="5"><i class="fas fa-cart-plus"></i>Add to Cart</button>
+    <p class="post-description">Carnotaurus is a genus of theropod dinosaur that lived during the Late Cretaceous period, approximately 72 to 69 million years ago. It is known for its unique appearance, characterized by two large horns above its eyes and a deep, robust skull.</p>
+  </div>
+  <!-- Post Box 6 -->
+  <div class="post-box">
+    <img src="images/Giganotosaurus.jpg" alt="post-giganotosaurus">
+    <h2 class="category">Predatory view of ancient reptiles</h2>
+    <a href="dinoz/Giganotaurus/index.html" class="post-title">
+      Giganotosaurus
+    </a>
+    <h6 class="price">
+      $<span class="priceValue">300</span>
+    </h6>
+    <button class="add-to-cart-btn btn-small addtoCart" data-product-id="6"><i class="fas fa-cart-plus"></i>Add to Cart</button>
+    <p class="post-description">Giganotosaurus is a genus of giant theropod dinosaur that lived during the Late Cretaceous period, around 99 to 97 million years ago. It is one of the largest meat-eating dinosaurs known, reaching lengths of up to 43 to 46 feet (13 to 14 meters) and weighing around 6 to 8 tons.</p>
+  </div>
+  <div id="messageContainer"></div>
+</section>
+ 
+
+
+
+
+
+   <section class="post container" id="information">
+    <!-- Post Box 1 -->
+    <div class="poster">
+      <img src="images/360_F_598182281_d8B2PqU0Oy4X0ldYDSVIAF7944lG0n9H.jpg" alt="post-t-rex">
+      <h2 class="category">Herbivorous species of ancient reptiles</h2>
+      <a href="#" class="post-title">
+        Apatosaurus
+      </a>
+      <h6 class="price">
+        $<span class="priceValue">400</span>
+    </h6>
+    <button class="add-to-cart-btn btn-small addtoCard" data-product-id="7"><i class="fas fa-cart-plus"></i>Add to Cart</button>
+      <p class="post-description">Apatosaurus, formerly known as Brontosaurus, is a herbivorous dinosaur that lived during the Late Jurassic period, approximately 150 million years ago. Here are some key features and facts about Apatosaurus:
+
+        Size and Appearance: Apatosaurus was a colossal dinosaur, reaching lengths of up to 75 feet (23 meters) and weighing around 20 to 35 tons. It had a long neck, a small head with a small brain, a massive body, a long tail, and column-like legs.
+        
+        Herbivorous Diet: Apatosaurus was a plant-eating dinosaur, feeding on vegetation such as ferns, conifers, and other plants. Its teeth were adapted for stripping leaves and twigs from plants, but it is believed to have swallowed food without much chewing, relying on its massive gut for digestion.</p>
+    </div>
+     <!-- Post Box 2 -->
+     <div class="poster">
+      <img src="images/sfne_parasaurolophus_resize.jpg" alt="post-velociraptor">
+      <h2 class="category">Herbivorous species of ancient reptiles</h2>
+      <a href="#" class="post-title">
+        Parasaurolophus
+      </a>
+      <h6 class="price">
+        $<span class="priceValue">99.99</span>
+    </h6>
+      <button class="add-to-cart-btn btn-small addtoCard"data-product-id="8"><i class="fas fa-cart-plus"></i>Add to Cart</button>
+      <p class="post-description">Parasaurolophus is a herbivorous dinosaur that lived during the Late Cretaceous period, approximately 76 to 73 million years ago. Here are some key features and facts about Parasaurolophus:
+
+        Crested Head: One of the most distinctive features of Parasaurolophus is its elaborate crest on top of its head. The crest was a long, curved, hollow tube that extended backward from the skull. It is believed to have been used for communication, producing various sounds and possibly enhancing the dinosaur's sense of smell.
+        
+        Size and Appearance: Parasaurolophus was a large dinosaur, measuring around 33 to 40 feet (10 to 12 meters) in length and weighing approximately 2 to 3.5 tons. It had a long, slender body, a long neck, a small head, and a long tail.
+        
+        Herbivorous Diet: Parasaurolophus was a plant-eating dinosaur that primarily fed on low-lying vegetation such as ferns and horsetails. It had a beak-like mouth and specialized teeth for cropping and chewing plant material.</p>
+    </div>
+       <!-- Post Box 3 -->
+       <div class="poster">
+        <img src="images/triceratops.jpg" alt="post-triceratops">
+        <h2 class="category">Herbivorous species of ancient reptiles</h2>
+        <a href="#" class="post-title">
+          Triceratops
+        </a>
+        <h6 class="price">
+          $<span class="priceValue">90</span>
+      </h6>
+        <button class="add-to-cart-btn btn-small addtoCard" data-product-id="9"><i class="fas fa-cart-plus"></i>Add to Cart</button>
+        <p class="post-description">Triceratops is a genus of large herbivorous dinosaur that roamed the Earth during the Late Cretaceous period, approximately 68-66 million years ago. Here's a short information about Triceratops:
+
+          Size: Triceratops was one of the largest land animals of its time, reaching lengths of about 26-30 feet (8-9 meters), standing about 9-10 feet (2.7-3 meters) tall at the shoulder, and weighing around 6-12 tons.L</p>
+      </div>
+       <!-- Post Box 4 -->
+    <div class="poster">
+      <img src="images/stegio.jpg" alt="post-stegosaurus">
+      <h2 class="category">Herbivorous view of ancient reptiles</h2>
+      <a href="#" class="post-title">
+        Stegosaurus
+      </a>
+      <h6 class="price">
+        $<span class="priceValue">199.99</span>
+    </h6>
+      <button class="add-to-cart-btn btn-small addtoCard" data-product-id="10"><i class="fas fa-cart-plus"></i>Add to Cart</button>
+      <p class="post-description">Stegosaurus is a genus of herbivorous dinosaur that lived during the Late Jurassic period, around 155-150 million years ago. Here's a short information about Stegosaurus:
+
+        Size: Stegosaurus was a large dinosaur, measuring about 26-30 feet (8-9 meters) in length and standing around 9-14 feet (2.7-4.3 meters) tall at the plates. It weighed around 5-7 tons.</p>
+    </div>
+     <!-- Post Box 5 -->
+     <div class="poster">
+      <img src="images/brachio.jpg" alt="post-brachio">
+      <h2 class="category">Herbivorous view of ancient reptiles</h2>
+      <a href="#" class="post-title">
+        Brachiosaurus
+      </a>
+      <h6 class="price">
+        $<span class="priceValue">109</span>
+    </h6>
+      <button class="add-to-cart-btn btn-small addtoCard" data-product-id="11"><i class="fas fa-cart-plus"></i>Add to Cart</button>
+      <p class="post-description">Brachiosaurus is a genus of large, herbivorous dinosaur that lived during the Late Jurassic period, approximately 154-153 million years ago. Here's a short information about Brachiosaurus:
+
+        Size: Brachiosaurus was one of the largest dinosaurs known to have existed. It reached immense sizes, with estimates suggesting it could grow up to 85 feet (26 meters) in length and stand about 40-50 feet (12-15 meters) tall at the shoulders. It weighed around 30-60 tons, making it one of the heaviest land animals of all time.</p>
+    </div>
+       <!-- Post Box 6 -->
+       <div class="poster">
+        <img src="images/diplodocus-herbivore.jpg" alt="post-triceratops">
+        <h2 class="category">Herbivorous species of ancient reptiles</h2>
+        <a href="#" class="post-title">
+          Diplodocus
+        </a>
+        <h6 class="price">
+          $<span class="priceValue">150</span>
+      </h6>
+        <button class="add-to-cart-btn btn-small addtoCard" data-product-id="12"><i class="fas fa-cart-plus"></i>Add to Cart</button>
+        <p class="post-description">Diplodocus is a genus of long-necked, herbivorous dinosaur that lived during the Late Jurassic period, around 154-152 million years ago. Here's a short information about Diplodocus:
+
+          Size: Diplodocus was a massive dinosaur, reaching lengths of up to 85 feet (26 meters) and standing about 15-20 feet (4.5-6 meters) tall at the hips. It had a long, slender body with a relatively small head compared to its body size. It weighed around 10-15 tons</p>
+      </div>
+   </section>
+
+
+
+
+
+
+
+
+
+
+<!-- Post section end  -->
+  <!-- Contact section start -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-img">
+          <div class="img-box">
+            <div class="section-title">
+              <h1>Contact Us</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="contact-form">
+          <div class="form">
+            <div class="row">
+              <div class="left input-group">
+                <label>Name</label>
+                <input type="text" placeholder="Your name here" class="input-control">
+              </div>
+              <div class="right input-group">
+                <label>Email or Phone</label>
+                <input type="text" placeholder="Your email or phone here" class="input-control">
+              </div>
+            </div>
+           <div class="row">
+             <div class="input-group">
+              <label>Message</label>
+              <textarea class="input-control" placeholder="Text your message here"></textarea>
+             </div>
+           </div>
+           <div class="form-btn">
+            <button type="button" class="btn btn-01">Send Message</button>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- Contact section end -->
+  <!-- JQUERY -->
+  <script
+  src="https://code.jquery.com/jquery-3.7.0.js"
+  integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+  crossorigin="anonymous"></script>
+  <script src="scripts/main.js"></script>
+  <script src="JS/script.js"></script>
+</body>
+
+</html>
